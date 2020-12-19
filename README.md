@@ -5,3 +5,4 @@ Human Trafficking has always been a major problem in the world and it has devast
 ## Libraries Used
 This project will be completed in Python using the [pandas](https://pandas.pydata.org/), [numpy](https://numpy.org/), and [scikit-learn](https://scikit-learn.org/stable/) libraries.
 ## Pre - Processing
+The data contains too much information to process all at once so we will cut it down to just cases in the United States.  In addition, the format of the data needs to be altered for cases of missing data.  The way missing data is handled is to have a -99 as a placeholder, but that will skew our data when we attempt to do any grouby mechanics.  To fix this we have to alter the actual excel file and replace all -99s to 0s.  This will also give us a pseudo binary flag for any column with 0 being false and 1 being true.  The data set can be found here [TraffickingData](https://www.ctdatacollaborative.org/dataset/resource/511adcb7-b1a2-4cc7-bf2f-0960d43a49cc).
